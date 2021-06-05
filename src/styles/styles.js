@@ -114,7 +114,20 @@ export const TaxoTron = styled.div`
   border-radius: 5px;
   box-shadow: 0px 4px 4px #e7e7ff;
   color: white;
+  overflow: hidden;
   & > h1 {
     font-weight: 500;
+    font-size: 48px;
+    position: relative;
+    top: 128px;
+    left: 46px;
+  }
+  & > p {
+    width: 264px;
+    font-weight: 200;
+    font-size: 16px;
+    position: relative;
+    left: 46px;
+    top: 140px;
   }
 `;
