@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Calculator from './components/Calculator';
-import { MainCard, AppDiv, TaxoTron } from './styles/styles';
+import { MainCard, AppDiv, TaxoTron, BigPlanet } from './styles/styles';
 
 const App = () => {
   const initialState = {
@@ -24,6 +24,7 @@ const App = () => {
         <TaxoTron>
           <h1>Tax-o-tron</h1>
           <p>The free and simple online tax calculator</p>
+          <BigPlanet />
         </TaxoTron>
         <Calculator
           userDetail={userDetail}

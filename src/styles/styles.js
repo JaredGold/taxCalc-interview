@@ -131,3 +131,17 @@ export const TaxoTron = styled.div`
     top: 140px;
   }
 `;
+
+export const BigPlanet = styled.div`
+  height: 203.64px;
+  width: 220px;
+  background: linear-gradient(
+    117.38deg,
+    #e7e6ff 10.73%,
+    rgba(231, 230, 255, 0) 84.05%
+  );
+  border-radius: 100%;
+  position: relative;
+  top: 210px;
+  left: -30px;
+`;
