@@ -13,18 +13,31 @@ const taxCalc = value => {
     val4: 0
   };
 
-  if (!value || value <= 18200) return ans;
+  // catch to end function early if the answer is nu,,
+  if (!value || isNaN(value) || value <= 18200) return ans;
 
-  for (let i = value; i > 18200; i--) {
-    if (i >= 180001) {
-      ans.val4 += 0.45;
-    } else if (i >= 120001) {
-      ans.val3 += 0.37;
-    } else if (i >= 45001) {
-      ans.val2 += 0.325;
-    } else if (i >= 18201) {
-      ans.val1 += 0.19;
-    }
+  // collection of the max you can pay in tax for each category (can be automated for other years)
+  let max = {
+    max1: 5092,
+    max2: 24375,
+    max3: 22200
+  };
+
+  // all calculations
+  if (value > 180000) {
+    ans.val1 = max.max1;
+    ans.val2 = max.max2;
+    ans.val3 = max.max3;
+    ans.val4 = (value - 180000) * 0.45;
+  } else if (value > 120000) {
+    ans.val1 = max.max1;
+    ans.val2 = max.max2;
+    ans.val3 = (value - 120000) * 0.37;
+  } else if (value > 45000) {
+    ans.val1 = max.max1;
+    ans.val2 = (value - 45000) * 0.325;
+  } else {
+    ans.val1 = (value - 18200) * 0.19;
   }
 
   return ans;
