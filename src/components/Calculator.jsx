@@ -55,7 +55,6 @@ const Calculator = (props) => {
           <label htmlFor="income">Enter your total taxable income for the year *</label>
           <input type="number" name="income" placeholder="Amount" value={userDetail.income} onChange={handleChange}/>
         </FormSelection>
-
         <CalculateButton type="submit">Calculate</CalculateButton>
       </StyledForm>
 

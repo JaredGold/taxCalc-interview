@@ -50,7 +50,7 @@ export const FormSelection = styled.div`
     border-radius: 5px;
     font-size: 14px;
     border: solid 1px #a4a4a4;
-    padding-left: 13.73px;
+    padding: 0 4px 0 13.73px;
   }
 `;
 
