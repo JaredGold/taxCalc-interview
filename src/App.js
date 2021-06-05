@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import Calculator from './components/Calculator';
 import { MainCard } from './styles/styles';
 const App = () => {
