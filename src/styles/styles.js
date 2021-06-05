@@ -106,3 +106,15 @@ export const AppDiv = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const TaxoTron = styled.div`
+  width: 320px;
+  height: 448px;
+  background-color: #8477c9;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px #e7e7ff;
+  color: white;
+  & > h1 {
+    font-weight: 500;
+  }
+`;
