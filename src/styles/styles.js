@@ -145,3 +145,14 @@ export const BigPlanet = styled.div`
   top: 210px;
   left: -30px;
 `;
+
+export const Moon = styled.div`
+  background-color: #e7e7ff;
+  width: 36.08px;
+  height: 35.17px;
+  position: relative;
+  left: 143.38px;
+  top: 37px;
+  border-radius: 100%;
+  box-shadow: -10px 13px 3px rgba(0, 0, 0, 0.15);
+`;
