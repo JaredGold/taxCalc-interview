@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calculator from './components/Calculator';
-import { MainCard } from './styles/styles';
+import { MainCard, AppDiv } from './styles/styles';
+
 const App = () => {
   const initialState = {
     country: 'Australia',
@@ -8,12 +9,6 @@ const App = () => {
     income: ''
   };
   const [userDetail, setUserDetails] = useState(initialState);
-
-  const backgroundStyle = {
-    backgroundColor: '#E7E7FF',
-    height: '100vh',
-    width: '100vw'
-  };
 
   const updateUserDetails = event => {
     const { name, value } = event.target;
@@ -24,7 +19,7 @@ const App = () => {
   };
 
   return (
-    <div style={backgroundStyle}>
+    <AppDiv>
       <MainCard>
         <div>
           <h1>Tax-o-tron</h1>
@@ -35,7 +30,7 @@ const App = () => {
           updateUserDetails={updateUserDetails}
         />
       </MainCard>
-    </div>
+    </AppDiv>
   );
 };
 

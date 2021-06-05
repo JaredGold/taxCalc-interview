@@ -87,9 +87,6 @@ export const StyledForm = styled.form`
 `;
 
 export const MainCard = styled.div`
-  position: absolute;
-  left: 194px;
-  top: 94px;
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   background: #fff;
@@ -99,4 +96,13 @@ export const MainCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 48px;
+`;
+
+export const AppDiv = styled.div`
+  background-color: #e7e7ff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
