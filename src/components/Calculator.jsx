@@ -3,18 +3,7 @@ import { Link } from 'react-router-dom';
 import {InfoDiv, FormSelection, InfoGraphic, InfoContent, CalculateButton, CalculateDiv, StyledForm} from "../styles/styles"
 
 const Calculator = (props) => {
-  const {userDetail, updateUserDetails} = props
-  
-  const countries = [
-    'Australia',
-    'United States of America',
-    'China',
-    'United Kingdom',
-    'other'
-  ];
-
-  const incomeYears = ['2020 - 2021', '2019 - 2020', '2018 - 2019']
-  
+  const {userDetail, updateUserDetails, countries, incomeYears} = props
 
 
   const handleChange = (event) => {

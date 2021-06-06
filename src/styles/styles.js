@@ -51,6 +51,11 @@ export const FormSelection = styled.div`
     font-size: 14px;
     border: solid 1px #a4a4a4;
     padding: 0 4px 0 13.73px;
+
+    &: disabled {
+      background-color: #e4e4e4;
+      color: #848484;
+    }
   }
 `;
 
@@ -157,4 +162,11 @@ export const Moon = styled.div`
   box-shadow: -10px 13px 3px rgba(0, 0, 0, 0.15);
 `;
 
-export const DisabledForm = styled.div``;
+export const PreviousButton = styled.button`
+  background-color: white;
+  color: #8477c9;
+  margin-top: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+`;

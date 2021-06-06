@@ -1,12 +1,39 @@
 import React from "react"
-import {DisabledForm} from "../styles/styles"
+import {Link} from 'react-router-dom'
+import {StyledForm, FormSelection, PreviousButton} from "../styles/styles"
 
 
-const CompleteForm = () => {
+const CompleteForm = ({userDetail, countries, incomeYears}) => {
+  
+  const handleClick = () => {
+    console.log("Test")
+  }
+
   return(
-    <DisabledForm>
-      <h1>Temp!</h1>
-    </DisabledForm>
+    <div>
+      <h1>Your tax results</h1>
+      <StyledForm>
+        <FormSelection>
+          <label htmlFor="country" >Select your country of residence *</label>
+          <select name="country" value={userDetail.country} disabled >
+            {countries.map((country, index) => <option key={index}>{country}</option>)}
+          </select>
+        </FormSelection>
+
+        <FormSelection>
+          <label htmlFor="year">Select an income year *</label>
+          <select name="year" value={userDetail.year} disabled>
+            {incomeYears.map((year, index) => <option key={index}>{year}</option>)}
+          </select>
+        </FormSelection>
+
+        <FormSelection>
+          <label htmlFor="income">Enter your total taxable income for the year *</label>
+          <input type="number" name="income" placeholder="Amount" value={userDetail.income} disabled/>
+        </FormSelection>
+      </StyledForm>
+      <PreviousButton onClick={handleClick}>Go back to previous screen</PreviousButton>
+    </div>
   )
 }
 

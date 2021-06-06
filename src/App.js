@@ -13,6 +13,16 @@ const App = () => {
   };
   const [userDetail, setUserDetails] = useState(initialState);
 
+  const countries = [
+    'Australia',
+    'United States of America',
+    'China',
+    'United Kingdom',
+    'other'
+  ];
+
+  const incomeYears = ['2020 - 2021'];
+
   const updateUserDetails = event => {
     const { name, value } = event.target;
     setUserDetails({
@@ -41,6 +51,8 @@ const App = () => {
                     {...props}
                     userDetail={userDetail}
                     updateUserDetails={updateUserDetails}
+                    countries={countries}
+                    incomeYears={incomeYears}
                   />
                 </>
               )}
@@ -50,7 +62,12 @@ const App = () => {
               path="/form-complete"
               render={props => (
                 <>
-                  <CompleteForm {...props} userDetail={userDetail} />
+                  <CompleteForm
+                    {...props}
+                    userDetail={userDetail}
+                    countries={countries}
+                    incomeYears={incomeYears}
+                  />
                   <TaxoTron>
                     <BigPlanet />
                     <Moon />
