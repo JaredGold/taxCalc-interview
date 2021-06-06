@@ -1,6 +1,6 @@
 import React from 'react'
 import taxCalc from '../utils/taxCalc'
-import {Container, PurpleContainer} from "../styles/styles"
+import {Container, PurpleContainer, SecondPlanet, SecondMoon} from "../styles/styles"
 
 const Results = ({userDetail}) => {
   let taxAmount = taxCalc(userDetail.income)
@@ -59,6 +59,10 @@ const Results = ({userDetail}) => {
             <p>{`$${taxAmount.val4}`}</p>
           </div>
         </Container>
+      </div>
+      <div id="planets">
+        <SecondPlanet />
+        <SecondMoon />
       </div>
     </PurpleContainer>
   )

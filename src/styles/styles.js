@@ -137,48 +137,6 @@ export const TaxoTron = styled.div`
   }
 `;
 
-export const PurpleContainer = styled.div`
-  width: 320px;
-  height: 448px;
-  background-color: #8477c9;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px #e7e7ff;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & > #breakdown {
-    margin-top: 16px;
-    & > h4 {
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 8px;
-    }
-  }
-
-  & > #top-container {
-    width: 280px;
-    & > p {
-      font-size: 14px;
-    }
-    & > #income-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      height: 53.8px;
-      background-color: #fff;
-      color: #8477c9;
-      margin-top: 8px;
-      & > h1 {
-        font-weight: 500;
-      }
-    }
-  }
-`;
-
 export const BigPlanet = styled.div`
   height: 203.64px;
   width: 220px;
@@ -238,4 +196,77 @@ export const Container = styled.div`
     font-size: 18px;
     color: #8477c9;
   }
+`;
+
+export const PurpleContainer = styled.div`
+  width: 320px;
+  height: 448px;
+  background-color: #8477c9;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px #e7e7ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  & > #breakdown {
+    margin-top: 16px;
+    z-index: 1;
+    & > h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+  }
+
+  & > #top-container {
+    width: 280px;
+    & > p {
+      font-size: 14px;
+    }
+    & > #income-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      height: 53.8px;
+      background-color: #fff;
+      color: #8477c9;
+      margin-top: 8px;
+      & > h1 {
+        font-weight: 500;
+      }
+    }
+  }
+  & > #planets {
+    width: 100%;
+  }
+`;
+
+export const SecondPlanet = styled.div`
+  height: 203.64px;
+  width: 220px;
+  background: linear-gradient(
+    117.38deg,
+    #e7e6ff 10.73%,
+    rgba(231, 230, 255, 0) 84.05%
+  );
+  position: absolute;
+  bottom: -49.06px;
+  left: -36.08px;
+  border-radius: 100%;
+  z-index: 0;
+`;
+
+export const SecondMoon = styled.div`
+  background-color: #e7e7ff;
+  width: 36.08px;
+  height: 35.17px;
+  border-radius: 100%;
+  position: absolute;
+  left: 130px;
+  bottom: 90px;
+  box-shadow: -10px 13px 3px rgba(0, 0, 0, 0.15);
 `;

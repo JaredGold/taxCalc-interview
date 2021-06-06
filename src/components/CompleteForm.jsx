@@ -1,12 +1,12 @@
 import React from "react"
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {StyledForm, FormSelection, PreviousButton, ResultsTitle} from "../styles/styles"
 
 
-const CompleteForm = ({userDetail, countries, incomeYears}) => {
+const CompleteForm = ({userDetail, countries, incomeYears, history}) => {
   
   const handleClick = () => {
-    console.log("Test")
+    return history.push("/")
   }
 
   return(
