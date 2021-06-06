@@ -145,6 +145,7 @@ export const PurpleContainer = styled.div`
   box-shadow: 0px 4px 4px #e7e7ff;
   color: white;
   display: flex;
+  flex-drection: row;
 `;
 
 export const BigPlanet = styled.div`
