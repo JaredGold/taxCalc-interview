@@ -37,7 +37,7 @@ const InnerContent = () => {
       <div>
         <div>
           <h6>Tax Bracket</h6>
-          <p>$0 - $18,200</p>
+          <p>$180,000+</p>
         </div>
           <p>$0</p>
       </div>
