@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 import {InfoDiv, FormSelection, InfoGraphic, InfoContent, CalculateButton, CalculateDiv, StyledForm} from "../styles/styles"
 
 const Calculator = (props) => {
@@ -55,7 +55,7 @@ const Calculator = (props) => {
           <label htmlFor="income">Enter your total taxable income for the year *</label>
           <input type="number" name="income" placeholder="Amount" value={userDetail.income} onChange={handleChange}/>
         </FormSelection>
-        <CalculateButton type="submit">Calculate</CalculateButton>
+        <Link to="/form-complete"><CalculateButton type="submit">Calculate</CalculateButton></Link>
       </StyledForm>
 
     </CalculateDiv>

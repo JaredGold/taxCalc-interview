@@ -44,6 +44,19 @@ const App = () => {
                 </>
               )}
             />
+            <Route
+              exact
+              path="/form-complete"
+              render={props => (
+                <>
+                  <Calculator {...props} userDetail={userDetail} />
+                  <TaxoTron>
+                    <BigPlanet />
+                    <Moon />
+                  </TaxoTron>
+                </>
+              )}
+            />
             <Route component={NotFound} />
           </Switch>
         </Router>
