@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calculator from './components/Calculator';
 import NotFound from './components/NotFound';
+import CompleteForm from './components/CompleteForm';
 import { MainCard, AppDiv, TaxoTron, BigPlanet, Moon } from './styles/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -49,7 +50,7 @@ const App = () => {
               path="/form-complete"
               render={props => (
                 <>
-                  <Calculator {...props} userDetail={userDetail} />
+                  <CompleteForm {...props} userDetail={userDetail} />
                   <TaxoTron>
                     <BigPlanet />
                     <Moon />
