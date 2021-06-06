@@ -156,3 +156,5 @@ export const Moon = styled.div`
   border-radius: 100%;
   box-shadow: -10px 13px 3px rgba(0, 0, 0, 0.15);
 `;
+
+export const DisabledForm = styled.div``;
