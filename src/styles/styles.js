@@ -176,3 +176,16 @@ export const ResultsTitle = styled.h1`
   font-weight: 400;
   margin-bottom: 16px;
 `;
+
+export const Container = styled.div`
+  background-color: white;
+  color: black;
+  margin-bottom: 8px;
+  width: 278px;
+  height: 48px;
+  border-radius: 3px;
+  display: grid;
+  & > div {
+    font-size: 12px;
+  }
+`;
