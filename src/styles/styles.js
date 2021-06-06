@@ -170,3 +170,9 @@ export const PreviousButton = styled.button`
   text-decoration: underline;
   font-size: 14px;
 `;
+
+export const ResultsTitle = styled.h1`
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 16px;
+`;

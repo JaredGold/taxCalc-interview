@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from 'react-router-dom'
-import {StyledForm, FormSelection, PreviousButton} from "../styles/styles"
+import {StyledForm, FormSelection, PreviousButton, ResultsTitle} from "../styles/styles"
 
 
 const CompleteForm = ({userDetail, countries, incomeYears}) => {
@@ -11,7 +11,7 @@ const CompleteForm = ({userDetail, countries, incomeYears}) => {
 
   return(
     <div>
-      <h1>Your tax results</h1>
+      <ResultsTitle>Your tax results</ResultsTitle>
       <StyledForm>
         <FormSelection>
           <label htmlFor="country" >Select your country of residence *</label>
