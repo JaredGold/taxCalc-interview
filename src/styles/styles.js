@@ -137,6 +137,16 @@ export const TaxoTron = styled.div`
   }
 `;
 
+export const PurpleContainer = styled.div`
+  width: 320px;
+  height: 448px;
+  background-color: #8477c9;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px #e7e7ff;
+  color: white;
+  display: flex;
+`;
+
 export const BigPlanet = styled.div`
   height: 203.64px;
   width: 220px;
@@ -184,8 +194,15 @@ export const Container = styled.div`
   width: 278px;
   height: 48px;
   border-radius: 3px;
-  display: grid;
-  & > div {
-    font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  & > .left {
+    font-size: 14px;
+  }
+  & > .right {
+    font-size: 18px;
+    color: #8477c9;
   }
 `;

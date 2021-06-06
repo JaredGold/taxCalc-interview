@@ -2,8 +2,15 @@ import React, { useState } from 'react';
 import Calculator from './components/Calculator';
 import NotFound from './components/NotFound';
 import CompleteForm from './components/CompleteForm';
-import InnerContent from './components/InnerContent'
-import { MainCard, AppDiv, TaxoTron, BigPlanet, Moon } from './styles/styles';
+import Results from './components/Results';
+import {
+  MainCard,
+  AppDiv,
+  TaxoTron,
+  BigPlanet,
+  Moon,
+  PurpleContainer
+} from './styles/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -69,12 +76,7 @@ const App = () => {
                     countries={countries}
                     incomeYears={incomeYears}
                   />
-                  <TaxoTron>
-                    <InnerContent />
-                    <BigPlanet />
-
-                    <Moon />
-                  </TaxoTron>
+                  <Results />
                 </>
               )}
             />
