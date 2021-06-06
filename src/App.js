@@ -3,14 +3,7 @@ import Calculator from './components/Calculator';
 import NotFound from './components/NotFound';
 import CompleteForm from './components/CompleteForm';
 import Results from './components/Results';
-import {
-  MainCard,
-  AppDiv,
-  TaxoTron,
-  BigPlanet,
-  Moon,
-  PurpleContainer
-} from './styles/styles';
+import { MainCard, AppDiv, TaxoTron, BigPlanet, Moon } from './styles/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -76,7 +69,7 @@ const App = () => {
                     countries={countries}
                     incomeYears={incomeYears}
                   />
-                  <Results />
+                  <Results userDetail={userDetail} />
                 </>
               )}
             />

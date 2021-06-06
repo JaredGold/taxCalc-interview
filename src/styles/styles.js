@@ -145,7 +145,38 @@ export const PurpleContainer = styled.div`
   box-shadow: 0px 4px 4px #e7e7ff;
   color: white;
   display: flex;
-  flex-drection: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > #breakdown {
+    margin-top: 16px;
+    & > h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+  }
+
+  & > #top-container {
+    width: 280px;
+    & > p {
+      font-size: 14px;
+    }
+    & > #income-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      height: 53.8px;
+      background-color: #fff;
+      color: #8477c9;
+      margin-top: 8px;
+      & > h1 {
+        font-weight: 500;
+      }
+    }
+  }
 `;
 
 export const BigPlanet = styled.div`
@@ -192,12 +223,13 @@ export const Container = styled.div`
   background-color: white;
   color: black;
   margin-bottom: 8px;
-  width: 278px;
+  width: 250px;
   height: 48px;
   border-radius: 3px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 14px;
 
   & > .left {
     font-size: 14px;
